@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Activities.MainActivity">
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/firebase"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="Firenote"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/bold"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edt_searchnote"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="search note"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/regular"
+        android:background="@drawable/curve"/>
+
+
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+android:visibility="gone"
+            android:id="@+id/ll_emptynote"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/sticky"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="No notes found !"
+                android:textSize="15sp"
+                android:fontFamily="@font/regular"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="Click + to add new note"
+                android:textSize="15sp"
+                android:fontFamily="@font/bold"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="3dp"
+            android:id="@+id/my_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_gravity="bottom|end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <com.joaquimley.faboptions.FabOptions-->
+<!--                android:visibility="gone"-->
+<!--                android:id="@+id/fab_options"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="80dp"-->
+<!--                app:button_menu="@menu/menulist"-->
+<!--                android:layout_marginBottom="10dp" />-->
+
+            <io.github.yavski.fabspeeddial.FabSpeedDial
+                android:id="@+id/fab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:fabGravity="bottom_end"
+                app:fabMenu="@menu/menulist"
+                app:miniFabBackgroundTint="@color/dullwhite"
+                app:miniFabDrawableTint="@color/grey"
+                app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/fab"-->
+<!--            android:layout_width="56dp"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:layout_gravity="bottom|end"-->
+<!--            app:button_menu="@menu/menulist"-->
+<!--            android:layout_margin="@dimen/fab_margin"-->
+<!--            android:src="@drawable/add">-->
+<!--        </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
+
+    </FrameLayout>
+
+</LinearLayout>

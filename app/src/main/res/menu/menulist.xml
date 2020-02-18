@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/faboptions_addnote"
+            android:icon="@drawable/addnote"
+            android:title="Add new note" />
+
+        <item
+            android:id="@+id/faboptions_deletedata"
+            android:icon="@drawable/deletedata"
+            android:title="Delete database" />
+
+        <item
+            android:id="@+id/faboptions_viewdatabase"
+            android:icon="@drawable/view"
+            android:title="View Databse" />
+
+
+        <item
+            android:id="@+id/faboptions_setting"
+            android:icon="@drawable/filledsetting"
+            android:title="Setting" />
+
+</menu>

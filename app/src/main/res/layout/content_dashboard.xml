@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/navcolor"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/sanjeev"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="Sanjeev Gupta"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/bold"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/but_add_cat"
+            android:background="@drawable/bluecurve"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:text="+ Add category"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:fontFamily="@font/light"
+            android:textColor="@color/white"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="3dp"
+        android:id="@+id/rec_category"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_emptycat"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <ImageView
+                android:src="@drawable/emptycategory"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="No category found!"
+                android:textSize="15sp"
+                android:fontFamily="@font/regular"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

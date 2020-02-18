@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ultracurve"
+            android:gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:src="@drawable/googlemap"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note Location"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/regular"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_nav"
+            android:visibility="gone"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/nav"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    </FrameLayout>
+
+
+<!--    <fragment android:id="@+id/autocomplete_fragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"-->
+<!--        />-->
+
+</LinearLayout>
+

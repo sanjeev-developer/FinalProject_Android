@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Activities.ViewData">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/eye"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:text="Database"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/bold"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="3dp"
+        android:id="@+id/my_recycler_viewdata"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

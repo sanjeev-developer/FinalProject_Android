@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/cardcolor"
+        card_view:cardBackgroundColor="@color/grey"
+        card_view:cardCornerRadius="10dp">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/delete" />
+
+                <TextView
+                    android:id="@+id/txt_delete_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="Are you sure you want to delete the audio file?"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_yes_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:fontFamily="@font/regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="yes"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_no_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/mustuard"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:fontFamily="@font/regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="no"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
